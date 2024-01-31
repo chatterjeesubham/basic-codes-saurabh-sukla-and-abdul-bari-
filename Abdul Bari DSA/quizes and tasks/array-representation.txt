@@ -1,0 +1,9 @@
+1. Let A be a two- dimensional array declared as follows:
+
+A : array [1……10] [1……15] of integer;
+
+Assuming that each integer takes one memory location . The array is stored in row-major order and the first element of the array is stored at location 100 , what is the address of the element  A[i][j] ?
+ans: = 100+[(i-1)15+(j-1)]*w 
+      here   w=1
+      =15i+j+84
+2.

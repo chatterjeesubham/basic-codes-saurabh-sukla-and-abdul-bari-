@@ -1,0 +1,6 @@
+to compile the code in c:
+    gcc filename.c -o executableFileName
+to run c file: just write the execute file name with extention
+
+
+to compile the code in c++: instead of gcc just write g++ , otherwise all are same as c.
