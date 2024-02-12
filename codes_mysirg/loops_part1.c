@@ -432,7 +432,7 @@
 // }
 
 //---------------------------------------------------------------------------------------------------
-//23. Write a program to calculate LCM of two numbers.(LCM: lowest common multiplication)
+//23. Write a program to calculate LCM of two numbers.(LCM: lowest common multiplication) in beng: lo.sa.gu
 // if i is lcm of a and b it means i is the lowest number which divisible by both a and b
 // #include<stdio.h>
 // int main()
@@ -554,23 +554,174 @@
 
 //---------------------------------------------------------------------------------------------------
 //28. Write a program to print first N terms of Fibonacci series.
-
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int t1=-1,t2=1,n,t;
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         t=t1+t2;
+//         printf("%d ",t);
+//         t1=t2;
+//         t2=t;
+//     }
+// }
 
 //---------------------------------------------------------------------------------------------------
-//29. Write a program to check co-prime number.
+//29. Write a program to check co-prime numbers.
+//a and b is co prime numbers if a and b both does not have any  common factor other than 1. means
+//no single numbers are exists which can be divisible by both a and b.
+// Example 1: 21 and 22
+// For 21 and 22:
+// The factors of 21 are 1, 3, 7, and 21.
+// The factors of 22 are 1, 2, 11, and 22.
+// Here 21 and 22 have only one common factor that is 1. Hence, their HCF is 1 and are co-prime.
 
+// Example 2: 21 and 27
+// For 21 and 27:
+// The factors of 21 are 1, 3, 7, and 21.
+// The factors of 27 are 1, 3, 9, and 27.
+// Here 21 and 27 have two common factors; they are 1 and 3. HCF is 3 and they are not co-prime.
+//code:
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int a,b,i,c;
+//     scanf("%d%d",&a,&b);
+//     c=a<b?a:b;
+//     for(i=2;i<=c;i++)
+//     {
+//         if(a%i==0 && b%i==0)
+//         {
+//             printf("its not co prime");
+//             break;
+//         }
+            
+//     }
+//     if(i==(c+1))
+//         printf("its co prime");
+//     return 0;
+// }
 
 //---------------------------------------------------------------------------------------------------
 //30. Write a program to print N co-prime numbers.
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int a=2,b,i,c,n;
 
+//     scanf("%d",&n);
+    
+//     while(n)
+//     {
+//         for(b=2;b<=a;b++)
+//         {
+//             c=a<b?a:b;
+//             for(i=2;i<=c;i++)
+//             {
+//                 if(a%i==0 && b%i==0)
+//                     break;
+//             }
+//             if(i==(c+1))
+//             {
+//                 printf("%d,%d\n",a,b);
+//                 n--;
+//                 if(n==0)
+//                     exit(0);
+//             }
+//         }
+//         a++;
+//     }
+//     return 0;
+// }
 
 //---------------------------------------------------------------------------------------------------
 //31. Write a program to convert a binary number to decimal number(code in normal and improved logic both).
+//1st method:
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<math.h>
+// int main()
+// {
+//    int n,i=0,s=0;
+//    scanf("%d",&n);
+//    while(n)
+//    {
+//         s=s+(pow(2,i)*(n%10));
+//         n=n/10;
+//         i++;
+//    }
+//    printf("%d",s); 
+//    return 0;
+// }
+
+//2nd method:
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<math.h>
+// int btod(char s[])
+// {
+//     int i,d=0;
+//     for(i=0;s[i]!='\0';i++)
+//     {
+//         if(s[i]=='0')
+//             d=2*d+0;
+//         else if(s[i]=='1')
+//             d=d*2+1;
+//     }
+//     return d;
+// }
+// int main()
+// {
+//   printf("%d",btod("10101")); 
+
+//    return 0;
+// }
 
 
 //---------------------------------------------------------------------------------------------------
 //32. Program to print first n positive numbers with two bits setSolution first logic|Solution Second Logic
+//1st method:
 
+
+//2nd method:
+
+
+//---------------------------------------------------------------------------------------------------
+//33. WAP to convert a decimal number to binary number.
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int n,i=0,r,j;
+//     int a[10];
+//    scanf("%d",&n);
+
+//    while(n)
+//    {
+//         r=n%2;
+//         a[i]=r;
+//         n=n/2;
+//         i++;
+//    } 
+//    for(j=i-1;j>=0;j--)
+//    {
+//      printf("%d",a[j]);
+//    }
+//    return 0;
+// }
+
+
+//------------------------------------now after 33 go for pattern printing--------------------------------------
+//34. Series Problems Program in C1+(1+2)+(1+2+3)+…+(1+2+3+…+N).
+
+
+//---------------------------------------------------------------------------------------------------
+//35. Series Problems Print first N Prime numbers.
 
 
 
