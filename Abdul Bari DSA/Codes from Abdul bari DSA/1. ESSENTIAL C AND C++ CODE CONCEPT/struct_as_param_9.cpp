@@ -22,8 +22,8 @@ struct test{
     int a[5];
     int n;
 };
-void fun(struct test t1,int n)
-{
+void fun(struct test t1,int n)//t1 takes as call by value as its array inside structure
+{                              //but if its only array its takes as value as address
     t1.a[0]=n;
     for(int i=0;i<5;i++)
         cout<<t1.a[i]<<endl;   

@@ -1,2 +1,3 @@
-for(int i=1;i<5;i++)
-    //     cin>>q[i];
+struct rec *p2=fun1();
+    // cout<<p2->l<<endl<<p2->b<<endl;
+    // return 0;
